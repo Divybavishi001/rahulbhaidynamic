@@ -1,0 +1,217 @@
+{% extends "basic.html" %}
+{% load static %}
+{% block content %}
+
+    <!-- content -->
+    <div class="container container-fluid pt-5 mt-5">
+        <div class="row">
+            <div class="container d-flex my-5 justify-content-center fw-bold">
+                <div class="firstH1 inline fw-bold ">Clarity.</div>
+                <div class="secondH1 inlinefw-bold">Confidence.</div>
+                <div class="thirdH1 inline fw-bold tricolorgradiant">Control.</div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center my-5">
+            <div class="col-lg-6">
+                <h4 class="tricolor-gradiant ">Already have investment?</h4>
+                <h2 class="text-white h2home mt-5">Making it ₹ 100 Crores is not a myth.</h2>
+                <h4 class=" mt-5" style="color: #D9D9D9;">Be the wealthiest 0.1% of the world</h4>
+                <a href="#">
+                    <span class=" m-5 white_btn elementor-button-text text-white">See how it works</span>
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <!-- graph -->
+                <div class="frame">
+                    <div class="frame-up"></div>
+                    <div class="d-flex">
+                        <div class="frame-left"></div>
+                        <div class="w-100">
+                            <div>
+                                <div class="tradingview-widget-container">
+                                    <div class="tradingview-widget-container__widget"></div>
+                                    <script type="text/javascript"
+                                        src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+                                        async>
+                                            {
+                                                "symbols": [["Apple", "AAPL|1D|INR"]],
+                                                    "chartOnly": true,
+                                                        "width": "100%",
+                                                            "locale": "en",
+                                                                "colorTheme": "dark",
+                                                                    "autosize": true,
+                                                                        "showVolume": false,
+                                                                            "showMA": false,
+                                                                                "hideDateRanges": false,
+                                                                                    "hideMarketStatus": false,
+                                                                                        "hideSymbolLogo": false,
+                                                                                            "scalePosition": "left",
+                                                                                                "scaleMode": "Normal",
+                                                                                                    "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                                                                                        "fontSize": "12",
+                                                                                                            "noTimeScale": false,
+                                                                                                                "valuesTracking": "1",
+                                                                                                                    "changeMode": "no-values",
+                                                                                                                        "chartType": "area",
+                                                                                                                            "maLineColor": "#2962FF",
+                                                                                                                                "maLineWidth": 1,
+                                                                                                                                    "maLength": 9,
+                                                                                                                                        "fontColor": "rgba(255, 255, 255, 1)",
+                                                                                                                                            "widgetFontColor": "rgba(255, 255, 255, 1)",
+                                                                                                                                                "lineWidth": 2,
+                                                                                                                                                    "lineType": 0,
+                                                                                                                                                        "dateRanges": ["1d|1", "1m|30", "3m|60", "12m|1D", "60m|1W"],
+                                                                                                                                                            "lineColor": "rgba(56, 142, 60, 1)",
+                                                                                                                                                                "topColor": "rgba(27, 94, 32, 0.96)",
+                                                                                                                                                                    "bottomColor": "rgba(178, 181, 190, 0.66)"
+                                            }
+                                        </script>
+                                </div>
+                                <div class="frame-down w-100"></div>
+                            </div>
+                        </div>
+                        <div class="frame-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 pt-5">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="{% static './IMG/companies profit.png' %}" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h4 class="tricolor-gradiant">Start investing with us</h4>
+                <h2 class="text-white h2home mt-3">Make your money work for you.</h2>
+                <p class="text-white phome mt-3">Answer a few questions and our experts will create a personalised investment
+                    plan that meets your goal.</p>
+                <ul class="styled-list mt-2">
+                    <li class="text-white third-line-list-item">
+                        <img src="{% static './IMG/svg/ICON/check ✔.svg' %}" alt="Image 1">
+                        <div class="text">Everything at once place</div>
+                    </li>
+                    <li class="text-white third-line-list-item">
+                        <img src="{% static './IMG/svg/ICON/check ✔.svg' %}" alt="Image 2">
+                        <div class="text">A set of filters to refine your portfolio</div>
+                    </li>
+                    <li class="text-white third-line-list-item">
+                        <img src="{% static './IMG/svg/ICON/check ✔.svg' %}" alt="Image 3">
+                        <div class="text">100+ fundamental and technical filter</div>
+                    </li>
+                    <li class="text-white third-line-list-item">
+                        <img src="{% static './IMG/svg/ICON/check ✔.svg' %}" alt="Image 3">
+                        <div class="text">Multiple asset classes: Stock, Bonds, Commodity, Real estate and more</div>
+                    </li>
+                    <li class="text-white third-line-list-item">
+                        <img src="{% static './IMG/svg/ICON/check ✔.svg' %}" alt="Image 3">
+                        <div class="text">Go global: Invest in companies listed in foreign markets.</div>
+                    </li>
+                </ul>
+                <a class="mt-4" href="#">
+                    <span class=" m-5 white_btn elementor-button-text text-white">Take a look</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <h4 class="tricolor-gradiant mt-5">Why do you need us?</h4>
+                <h2 class="text-white h2home mt-3">The life you want.</h2>
+                <p class="text-white phome mt-3">We're dedicated to helping you live the life you want, we foster our
+                    relationship by asking candid and sometimes difficult questions.</p>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="{% static './IMG/fund.png' %}" alt="">
+            </div>
+        </div>
+
+        <div class="row mt-5 pt-5">
+            <div class="col-lg-6" id="helping company">
+                <img class="img-fluid" src="{% static './IMG/posibilites.png' %}" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="text-white h2home mt-5">Helping you realise the posibilities.</h2>
+                <p class="text-white phome mt-5">Though making ₹ 100 crores is not a myth, you need someone to take you there.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5 pt-5">
+            <div class="col-lg-6">
+                <h2 class="text-white h2home mt-5">A passion for providing solutions.</h2>
+                <p class="text-white phome mt-5">We comprehend your needs and design tailored solutions to help meet your
+                    goals.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="{% static './IMG/solution.png' %}" alt="">
+            </div>
+        </div>
+
+        <div class="row mt-5 pt-5">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="{% static './IMG/approch.png' %}" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="text-white h2home mt-5">A specialist approach..</h2>
+                <p class="text-white phome mt-5">Our focused teams are led by industry veterans with decades of experience who
+                    will have an honest conversation about money and what matters most to you and your family across the
+                    generations.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5 secure">
+            <div class="container d-flex justify-content-center fw-bold">
+                <div class="firstH11 first inline fw-bold">safe.</div>
+                <div class="secondH11 inlinefw-bold">secured.</div>
+                <div class="thirdH11 inline fw-bold tricolorgradiant">private.</div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6">
+                    <div>
+                        <p class="text-white phome">
+                            We ensure that all your personal data and transactions are encrypted and secured,
+                             so what’s yours remains only yours. 
+                             We do not share your personal information with anyone, <span class="spn1">and we mean it</span>. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container upfooter">
+            <div class="row">
+                <h2 style="color: #FFFFFF;font-family: Poppins, Sans-serif; font-size: 45px; font-weight: 600; line-height: 65px; text-align: center;">
+                    It's not Luck!!</h2>
+            </div>
+            <div class="row">
+                <h2 style="color: #FFFFFF; font-family: Poppins, Sans-serif; font-size: 40px; font-weight: 500; line-height: 65px; text-align: center;">
+                    But, the right decision at the right time.</h2>
+            </div>
+            <div class="row">
+                <h2  style="color: #54AC3E; font-family: Poppins, Sans-serif; font-size: 35px; font-weight: 500; text-align: center;">
+                    <span class="spn1">Get ready to make a guilt free decision</span>.
+                </h2>
+            </div>
+        </div>
+        <div>
+            <!-- <button type="button" class="btn get_start_btn btn-lg" style="display: flex; justify-content: center;"> 
+                <a href="#" >
+                    <span class="elementor-button-text text-white">Join us now</span>
+                    </span>
+                </a>
+            </button> -->
+            <a class="thirdH1 inline tricolorgradiant" href="#" style=" display: flex; justify-content: center; font-style: normal;
+            text-decoration: none;
+            background-color: transparent;
+            background-image: linear-gradient(90deg, #01BCE6 0%, #BD0EFA 60%);">
+                <img width="200" height="60" src="https://royalmonarch.in/wp-content/uploads/2024/03/Group-1000002124-1.png"
+                    alt=""> </a>
+        </div>
+
+    </div>
+
+
+{% endblock %}

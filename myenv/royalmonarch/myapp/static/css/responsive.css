@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .royal_manaroch_navbar {
+      display: flex !important;
+      justify-content: center !important;
+      flex-direction: column !important;
+    }
+    .secondH1,
+    .thirdH1,
+    .firstH1 {
+      font-size: x-large;
+    }
+  }
+  
